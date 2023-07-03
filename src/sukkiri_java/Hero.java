@@ -1,11 +1,20 @@
+package sukkiri_java;
 
 public class Hero {
-	String name = "minato";
-	int HP = 100;
+	String name;
+	int HP;
+	Sword sword;
 	
-	public void attack(Matango m) {
+	public Hero(String name) {
+		this.HP = 100;
+		this.name = name;
+	}
+	
+	public Hero() {
+		this("ダミー");
+	}
+	public void attack() {
 		System.out.println(this.name + "の攻撃");
-		m.hp -= 5;
 		System.out.println("5ポイントのダメージを与えた。");
 	}
 	

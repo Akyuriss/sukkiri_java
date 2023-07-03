@@ -1,3 +1,4 @@
+import sukkiri_java.Hero;
 
 public class StrongHero extends Hero{
 	boolean flying;
